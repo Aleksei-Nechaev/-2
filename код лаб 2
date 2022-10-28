@@ -1,0 +1,161 @@
+#include <iostream>
+#include <stdio.h>
+#include <time.h>
+
+/*void shell(int *a,int n)
+{
+    int i,j,zxc,k;
+	int arr[5],x;
+
+	arr[0]=3;arr[1]=7;arr[2]=5;arr[3]=9;arr[4]=6;
+
+	for(k=0;k<5;k++)
+	{
+	    zxc=arr[k];
+		for(i=zxc;i<n;i++)
+		{
+		   x=a[i];
+		   for(j=i-zxc; (x<a[j]) && (j>=0);j=j-zxc)
+		   {
+		      a[j+zxc]=a[j];
+			  a[j+zxc]=x;
+		   }
+		}
+	}
+}*/
+
+/*void qs(int *a, int left, int right)
+{
+   int i,j;
+   int x,y;
+
+   i=left;j=right;
+
+   x=a[(left+right)/2];
+
+   do
+   {
+      while((a[i]<x) && (i<right)) i++;
+	  while((x<a[j]) && (j>left)) j++;
+
+	  if(i<+j)
+   }
+}*/
+
+
+/*void shell(int *arr,int n)
+{
+    int i,j,zxc,k;
+	int x;
+
+	for(k=n/2;k>0;k/=2)
+	{
+		for(i=k;i<n;i++)
+		{
+		   for(j=i-k; (j>=0) && arr[j]>arr[j+k];j=j-k)
+		   {
+		      x=arr[j];
+			  arr[j]=arr[j+k];
+			  arr[j+k]=x;
+		   }
+		}
+	}
+}*/
+
+
+/*int main()
+{
+
+	int i=0, j=0,r;
+	int	a[100][100],b[100][100],c[100][100],d;
+	srand(time(NULL));
+	setlocale(LC_ALL ,"russian");
+	for(i=0;i<100;i++)
+	{
+		for(j=0;j<100;j++)
+		{
+		    a[i][j]=rand()% 100;
+            printf("%d ", a[i][j]);
+		}
+	}
+	
+	/*i=0;j=0;
+    srand(time(NULL));
+	for(i=0;i<100;i++)
+	{
+		for(j=0;j<100;j++)
+		{
+		    b[i][j]=rand()% 100;
+            //printf("%d ", b[i][j]);
+		}
+	}
+ time_t start_time = clock();
+	for(i=0;i<100;i++)
+	{
+		for(j=0;j<100;j++)
+		{
+		    d=0;
+			for(r=0;r<100;r++)
+			{
+			   d=d+a[i][r]*b[r][j];
+			   c[i][j]=d;
+			}
+		}
+	}
+	time_t end_time = clock();
+	/*for(i=0;i<100;i++)
+	{
+		for(j=0;j<100;j++)
+		{
+            printf("%d ", c[i][j]);
+		}
+		
+	}*/
+    //printf("\n\n\n");
+	/*double time = (end_time - start_time)/1000.0;
+    printf("\nВремя выполнения программы %f",time);*/
+	//getchar();
+	//getchar();
+//}
+int main()
+{
+    
+	int r[5],u[5],p[5],q[10],i;
+
+    /*for(i=0;i<5;i++)
+	{
+	   r[i]=rand() %100;
+	}
+
+	for(i=0;i<5;i++)
+	{
+	   u[i]=i;
+	}
+
+	for(i=5;i>0;i--)
+	{
+	   p[i]=i;
+	}*/
+	int a=5;
+
+	for(i=0;i<a;i++)
+	{
+	   q[i]=i; 
+	}
+	for(i=a;i<10;i++)
+	{
+	   q[i]=q[i-1]-1;
+	}
+	for(i=0;i<10;i++)
+	{
+	printf("%d", q[i]);
+	}
+	getchar();
+	getchar();
+	//shell(r , 5);
+}
+
+
+
+
+
